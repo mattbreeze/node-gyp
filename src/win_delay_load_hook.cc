@@ -15,6 +15,11 @@
 
 #include <windows.h>
 
+// This is required for changes in Visual Studio 2015 Update 3 in delayimp.h that change the definition to use const
+#ifndef DELAYIMP_INSECURE_WRITABLE_HOOKS
+#define DELAYIMP_INSECURE_WRITABLE_HOOKS
+#endif
+
 #include <delayimp.h>
 #include <string.h>
 
